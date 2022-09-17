@@ -1,0 +1,250 @@
+
+menu {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+title{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    color: rgb(54, 53, 53);
+    box-shadow: 1px 1px 3px 3px #888888;
+    margin-bottom: 6px;
+    z-index: 2;
+}
+
+logo{
+    background-image: url(./images/logo1.png);
+    width: 100px;
+    height: 75px;
+    background-size: 95px 55px;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+menubar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+menubar bar {
+    width: 30%;
+    display: flex;
+    padding: 25px 0px 0px 5px;
+    justify-content: space-between;
+    font-family:  Calibri;
+}
+
+div[class="menubar"]>div[class="menu"]>div:nth-child(-n+4){
+    height:20px;
+    transition: ease-in-out 0.1s;
+}
+
+div[class="menubar"]>div[class="menu"]>div, div[class="social"]>html{
+    cursor: pointer;
+}
+
+div[class="menubar"]>div[class="menu"]>div:nth-child(-n+4):hover, div[class="menubar"]>div[class="menu"]>div:nth-child(-n+4):active{
+    color: #396683;
+    border-bottom: 1.5px solid rgb(134, 132, 151);
+    border-bottom-style: inset;
+}
+
+#order [class="orderNow"]{
+    align-self: center;
+    width: 100px;
+    text-align: center;
+    margin: 0px 10px 10px 0px;
+    padding:10px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: Calibri;
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%)
+}
+
+#card-content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin;
+    font-size: 2rem;
+    
+}
+
+#card-header{
+    font-weight: bold;
+}
+
+
+div[class="social"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10%;
+    padding: 25px 0px 0px 5px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+background{
+    height: 90vh;
+    background-image: url(./images/background.jpg);
+    background-size:cover;
+    width:100%;
+}
+
+info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+shopName{
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #916c6c;
+}
+
+address{
+    font-size:40px;
+    font-family: 'Dancing Script', cursive;
+    color:#916c6c;
+}
+
+contactNo{
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: #916c6c;
+}
+
+websiteAddress{
+    font-size: 30px;
+    align-self: center;
+    color: #916c6c;
+    padding: 0px 2px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+  }
+  
+  #grid-item {
+    background-color: rgba(199, 198, 207, 0.534);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    border-bottom: 2px solid rgb(197, 194, 199);
+    box-shadow: 0px 1px 3px rgb(161, 162, 163), 0px -1px 3px rgb(63, 63, 63);
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 100px;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+
+  type::before {
+    content: "Type: ";
+  }
+
+  #btn{
+      display: block;
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+      color: #888888;
+      background-color: #396683;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+  }
+   
+  #apple-img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    content: url(./images/apple.jpg);
+  }
+
+  #steam-img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    content: url(./images/Steam.png)
+  }
+
+  #Xbox-img{
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    content: url(./images/Xbox.jpg)
+  }
+
+  #uber-img{
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    content: url(./images/uber.png)
+  }
+
+  #Spotify-img{
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    content: url(./images/Spotify.png)
+  }
+  
+  #Nike-img{
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    content: url(./images/Nike.jpg)
+  }
+
+footer{
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    display:block;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(247, 242, 242);
+    background-image: linear-gradient(to right, #2b5876 0%, #4b4376 51%, #2c2b76 100%);
+    box-shadow: 0px -4px 3px rgba(175, 172, 196, 0.75);
+}
+footer {
+    color: #ceced4;
+}
+

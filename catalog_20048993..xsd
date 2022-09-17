@@ -1,0 +1,252 @@
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="br" type="xs:string"/>
+<xs:element name="Home" type="xs:string"/>
+<xs:element name="Digital" type="xs:string"/>
+<xs:element name="Physical" type="xs:string"/>
+<xs:element name="Contact" type="xs:string"/>
+<xs:element name="Order">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="class"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+<xs:element name="bar">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="br"/>
+      <xs:element ref="Home"/>
+      <xs:element ref="Digital"/>
+      <xs:element ref="Physical"/>
+      <xs:element ref="Contact"/>
+      <xs:element ref="Order">
+        <xs:annotation>
+          <xs:documentation> A button for users to order a Gift Card </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="logo" type="xs:string"/>
+<xs:element name="menubar">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="bar"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="shopName" type="xs:string"/>
+<xs:element name="address" type="xs:string"/>
+<xs:element name="contactNo" type="xs:string"/>
+<xs:element name="websiteAddress" type="xs:string"/>
+<xs:element name="background" type="xs:string"/>
+<xs:element name="info">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="shopName"/>
+      <xs:element ref="address"/>
+      <xs:element ref="contactNo"/>
+      <xs:element ref="websiteAddress"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="title">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="logo"/>
+      <xs:element ref="menubar"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="body">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="background"/>
+      <xs:element ref="info"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="name">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+<xs:element name="price" type="xs:string"/>
+<xs:element name="discount" type="xs:string"/>
+<xs:element name="avaliable" type="xs:string"/>
+<xs:element name="Numberofusers" type="xs:string"/>
+<xs:element name="type" type="xs:string"/>
+<xs:element name="Validity" type="xs:string"/>
+<xs:element name="description" type="xs:string"/>
+<xs:element name="button">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+<xs:element name="img">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+        <xs:attribute type="xs:string" name="src" use="optional"/>
+        <xs:attribute type="xs:string" name="alt" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+<xs:element name="div">
+  <xs:complexType mixed="true">
+    <xs:sequence>
+      <xs:element ref="name" minOccurs="0"/>
+      <xs:element ref="price" minOccurs="0"/>
+      <xs:element ref="discount" minOccurs="0"/>
+      <xs:element ref="avaliable" minOccurs="0"/>
+      <xs:element ref="Numberofusers" minOccurs="0"/>
+      <xs:element ref="type" minOccurs="0"/>
+      <xs:element ref="Validity" minOccurs="0"/>
+      <xs:element ref="description" minOccurs="0"/>
+      <xs:element ref="br" minOccurs="0"/>
+      <xs:element ref="button" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="apple">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="img"/>
+      <xs:element ref="div"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Steam">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="img"/>
+      <xs:element ref="div"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Xbox">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="img"/>
+      <xs:element ref="div"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Starbucks">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="img"/>
+      <xs:element ref="div"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Spotify">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="img"/>
+      <xs:element ref="div"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Nike">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="img"/>
+      <xs:element ref="div"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Email" type="xs:string"/>
+<xs:element name="menu">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="title">
+        <xs:annotation>
+          <xs:documentation> Title bar to display menus and some social media icons </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="body">
+        <xs:annotation>
+          <xs:documentation> Main Body </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="Card">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="apple"/>
+      <xs:element ref="Steam"/>
+      <xs:element ref="Xbox"/>
+      <xs:element ref="Starbucks"/>
+      <xs:element ref="Spotify"/>
+      <xs:element ref="Nike"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="footer">
+  <xs:complexType mixed="true">
+    <xs:sequence>
+      <xs:element ref="div"/>
+      <xs:element ref="Email"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="class"/>
+  </xs:complexType>
+</xs:element>
+<xs:element name="giftShop">
+  <xs:annotation>
+    <xs:documentation> 
+  Name: Sabina Pandey 
+  London Met ID: 20048993
+  Date: 03/28/2022
+</xs:documentation>
+  </xs:annotation>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="menu">
+        <xs:annotation>
+          <xs:documentation> The main screen of the XML page (i.e. The screen that appears first when the document is opened) </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="Card">
+        <xs:annotation>
+          <xs:documentation> List of Gift Card available </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="footer">
+        <xs:annotation>
+          <xs:documentation> Footer section of the XML document </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

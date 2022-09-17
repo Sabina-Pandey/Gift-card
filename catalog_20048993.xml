@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="catalog_20048993.css"?>
+<!-- 
+    Name: Sabina Pandey 
+    London Met ID: 20048993
+    Date: 03/28/2022
+-->
+<giftShop xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20048993.xsd">
+    <!-- The main screen of the XML page (i.e. The screen that appears first when the document is opened) -->
+    <menu class="main">
+        <!-- Title bar to display menus and some social media icons -->
+        <title class="titleBar">
+            <logo></logo>
+            <menubar class="menubar">
+                <bar class="menu">
+                    <br></br>
+                    <Home>Home</Home>
+                    <Digital>Digital</Digital>
+                    <Physical>Physical</Physical>
+                    <Contact>Contact Us</Contact>
+                    <!-- A button for users to order a Gift Card -->
+                    <Order class="orderNow">Order now</Order>
+                </bar>
+            </menubar>
+        </title>
+        
+        <!-- Main Body -->
+        <body class="body">
+            <background></background>
+            <info class="info">
+                <shopName>Pandey Giftcard</shopName>
+                <address>London, UK</address>
+                <contactNo>Contact: +977-9813750605</contactNo>
+                <websiteAddress>https://www.pandeygiftcard.com</websiteAddress>
+            </info>
+        </body>
+    </menu>
+    <!-- List of Gift Card available -->
+    <Card id="grid">
+        <apple id="grid-item">
+                <img id="apple-img" src="./images/apple.jpg" alt="Apple" />
+                <div id="card-content">
+                    <name id="card-header">Apple</name>
+                    <price>Price: 50$</price>
+                    <discount>Discount: 10% off</discount>
+                    <avaliable>Avaliable: 40 pcs</avaliable>
+                    <Numberofusers>Number of users: 4 </Numberofusers>
+                    <type> Physical</type>
+                    <Validity>Valid: June 1 2023</Validity>
+                    <description>Description: Use your Apple Gift Card to buy Apple products, accessories, games, music,movies and more.</description>
+                    <br></br>
+                    <button id="btn">Order Now</button>
+                </div>
+        </apple>
+
+        <Steam id="grid-item">
+            <img id="steam-img" src="./images/Steam.png" alt="Steam" />
+            <div id="card-content">
+                <name id="card-header">Steam</name>
+                <price>Price: 5$</price>
+                <avaliable>Avaliable: 20 pcs</avaliable>
+                <Numberofusers>Number of users: 2 </Numberofusers>
+                <type>Digital</type>
+                <Validity>Valid: July 27 2025</Validity>
+                <description>Description: Steam Gift Cards function similarly to gift certificates, and can be redeemed on Steam for the purchase of games, software, hardware, and any other item available on Steam.</description>
+                <br></br>
+                <button id="btn">Order Now</button>
+            </div>
+        </Steam>
+
+        <Xbox id="grid-item">
+            <img id="Xbox-img" src="./images/Xbox.jpg" alt="Xbox" />
+            <div id="card-content">
+                <name id="card-header">Xbox</name>
+                <price>Price: 50$</price>
+                <discount>Discount: 5% off</discount>
+                <avaliable>Avaliable: 10 pcs</avaliable>
+                <Numberofusers>Number of users: 3 </Numberofusers>
+                <type>Digital</type>
+                <Validity>Valid: Feb 15 2024</Validity>
+                <description> Description: Give them the option to choose their own gift with an Xbox Gift Card. It can be used to purchase the newest Xbox full game downloads, apps, movies, TV shows, devices, and more.</description>
+                <button id="btn">Order Now</button>
+            </div>
+        </Xbox>
+
+        <Starbucks id="grid-item">
+            <img id="uber-img" src="./images/Starbucks.jpg" alt="Starbucks" />
+            <div id="card-content">
+                <name id="card-header">Uber Eats</name>
+                <price>Price: 25$</price>
+                <discount>Discount: 5% off</discount>
+                <avaliable>Avaliable: 25 pcs</avaliable>
+                <Numberofusers>Number of users: 5 </Numberofusers>
+                <type>Physical</type> 
+                <Validity>Valid: May 7 2023</Validity>
+                <description>Description: Uber Eats gift cards are a great food gift for friends and family that ensures good memories, whether they order a snack for themselves or prepare a full spread for your next get-together.</description>
+                <button id="btn">Order Now</button>
+            </div>
+        </Starbucks>
+
+        <Spotify id="grid-item">
+            <img id="Spotify-img" src="./images/Spotify.png" alt="Spotify" />
+            <div id="card-content">
+                <name id="card-header">Spotify</name>
+                <price>Price: 40$</price>
+                <avaliable>Avaliable: 15 pcs</avaliable>
+                <Numberofusers>Number of users: 8 </Numberofusers>
+                <type>Digital</type>
+                <Validity>Valid: Mar 12 2025</Validity>
+                <description> Description: Spotify is an innovative new way to listen to music. Select from millions of tracks and albums on your computer, phone, and a variety of other devices. The right music is always at your fingertips, whether you're working out, partying, or relaxing. You can choose what you want to listen to or Spotify can surprise you.</description>
+                <button id="btn">Order Now</button>
+            </div>
+        </Spotify>
+
+        <Nike id="grid-item">
+            <img id="Nike-img" src="./images/Nike.jpg" alt="Nike" />
+            <div id="card-content">
+                <name id="card-header">Nike</name>
+                <price>Price: 25$</price>
+                <discount>Discount: 10% off</discount>
+                <avaliable>Avaliable: 30pcs</avaliable>
+                <Numberofusers>Number of users: 3 </Numberofusers>
+                <type>Physical</type>
+                <Validity>Valid: Jan 12 2024</Validity>
+                <description>Description: A Nike Gift Card opens the door to a world of footwear, apparel, and equipment. Nike UK gift cards can be redeemed for merchandise at any Nike store in the United Kingdom. It is not permitted to be used in franchise or third-party retailers.</description>
+                <button id="btn">Order Now</button>
+            </div>
+        </Nike>
+    </Card>
+    
+    <!-- Footer section of the XML document -->
+    <footer class="footer">
+        <div>&#169; 2022 Copyright </div> |
+        Pandey Gift Shop |
+        <Email>pandeygift77@gmail.com</Email>
+    </footer>
+</giftShop>
